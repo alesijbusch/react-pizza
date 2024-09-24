@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const PizzaBlock = ({ title, price, imageUrl, sizes, types }) => {
-  const [count, setCount] = useState(0);
+  // const [count, setCount] = useState(0);
   const [activeType, setActiveType] = useState(0);
   const [activeSize, setActiveSize] = useState(0);
   const typeNames = ["тонкое", "традиционное"];
@@ -45,6 +45,7 @@ const PizzaBlock = ({ title, price, imageUrl, sizes, types }) => {
           {/* <li className="active">26 см.</li> */}
         </ul>
       </div>
+      {/* <div onClick={() => setCount(count + 1)} className="pizza-block__bottom"></div> */}
       <div onClick={() => setCount(count + 1)} className="pizza-block__bottom">
         <div className="pizza-block__price">от {price} ₽</div>
         <div className="button button--outline button--add">
@@ -62,6 +63,7 @@ const PizzaBlock = ({ title, price, imageUrl, sizes, types }) => {
           </svg>
           <span>Добавить</span>
           <i>{count}</i>
+          {/* <i>{count}</i> */}
         </div>
       </div>
     </div>
