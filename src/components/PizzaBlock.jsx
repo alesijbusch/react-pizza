@@ -46,7 +46,7 @@ const PizzaBlock = ({ title, price, imageUrl, sizes, types }) => {
         </ul>
       </div>
       {/* <div onClick={() => setCount(count + 1)} className="pizza-block__bottom"></div> */}
-      <div onClick={() => setCount(count + 1)} className="pizza-block__bottom">
+      <div className="pizza-block__bottom">
         <div className="pizza-block__price">от {price} ₽</div>
         <div className="button button--outline button--add">
           <svg
@@ -62,7 +62,7 @@ const PizzaBlock = ({ title, price, imageUrl, sizes, types }) => {
             />
           </svg>
           <span>Добавить</span>
-          <i>{count}</i>
+          <i>1</i>
           {/* <i>{count}</i> */}
         </div>
       </div>
